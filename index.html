@@ -261,6 +261,139 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://CoderTung.top/2017/08/16/Genymotion使用问题统计/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tung">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderTung">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/08/16/Genymotion使用问题统计/" itemprop="url">
+                  Genymotion使用问题统计
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-16T21:58:19+08:00">
+                2017-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="有时开发难免会用到虚拟机，最好用的则是Genymotion"><a href="#有时开发难免会用到虚拟机，最好用的则是Genymotion" class="headerlink" title="有时开发难免会用到虚拟机，最好用的则是Genymotion"></a>有时开发难免会用到虚拟机，最好用的则是Genymotion</h2><blockquote>
+<p>在这里给出Genymotion下载个人免费版<a href="https://www.genymotion.com/download/" target="_blank" rel="external">网址</a>，需要登陆后才可以下载。<br>有两个版本，使用Genymotion时必须有<strong>VirtualBox</strong>，一个是带有<strong>VirtualBox</strong>的，一个是不带<strong>VirtualBox</strong>的，可以自己选择。</p>
+</blockquote>
+<h2 id="使用Genymotion时，遇到的各种问题及解决办法（长期更新）："><a href="#使用Genymotion时，遇到的各种问题及解决办法（长期更新）：" class="headerlink" title="使用Genymotion时，遇到的各种问题及解决办法（长期更新）："></a>使用Genymotion时，遇到的各种问题及解决办法（长期更新）：</h2><h3 id="使用Genymotion时，就必须要下载虚拟器，但下载过程却很漫长"><a href="#使用Genymotion时，就必须要下载虚拟器，但下载过程却很漫长" class="headerlink" title="使用Genymotion时，就必须要下载虚拟器，但下载过程却很漫长"></a>使用Genymotion时，就必须要下载虚拟器，但下载过程却很漫长</h3><p>下面的方法可以快速下载一个虚拟机，有多快，看你网速。<br>以下方法内容大多来自<a href="http://blog.csdn.net/michael_ouyang/article/details/53186765" target="_blank" rel="external">michael_ouyang的CSDN博客</a><br><strong>第一步：</strong><br>在Genymotion中选择你需要下载的镜像<br>然后点击Next进入下一步，打开genymotion的下载页面后关闭这个页面，点X或者Cancel都可以<br><strong>第二步：</strong></p>
+<ul>
+<li>手动进入路径<code>C:\Users\电脑用户名\AppData\Local\Genymobile</code><br>打开<strong>genymotion.log</strong>文件</li>
+<li>在Genymotion中打开Settings，点击VirtualBox，复制下面Virtual devices后面文字框中的路径，在资源管理器中打开，返回前两级菜单到<code>C:\Users\电脑用户名\AppData\Local\Genymobile</code>，打开<strong>genymotion.log</strong>文件</li>
+<li>win+R打开运行框，输入 %appdata%， 再点击上一步（Alt+↑），找到local文件夹里的Genymobile,打开 查看里面的<strong>genymotion.log</strong>文件</li>
+</ul>
+<p>以上方法选择一个即可。<br>在文件中找到类似下面的文字（可以搜索.ova）<br><code>[Genymotion] [Debug] Downloading file &quot;http://dl.genymotion.com/dists/5.1.0/ova/genymotion_vbox86p_5.1_160825_071239.ova&quot;</code><br>将<code>http://file........ova</code> 这个虚拟镜像地址复制，使用迅雷下载，很快能完成下载！<br><strong>第三步：</strong><br>把下载的ova文件复制到<br><code>C:\Users\电脑用户名\AppData\Local\Genymobile\Genymotion\ova</code><br>然后删除同名的带.partial的文件。<br><strong>第四步：</strong><br>再到genymotion中，重新点击需要下载的镜像，你会发现对应的镜像已经可以使用了不需要下载了，验证安装后即会显示在设备列表中。<br><strong>第五步：</strong><br>点击start ，启动模拟器，开始使用</p>
+<p>一些已知的虚拟机OVA下载地址，点击开始下载<br>三星Note3 Android 4.3     API 18  <a href="http://dl.genymotion.com/dists/4.3/ova/genymotion_vbox86p_4.3_170321_020053.ova" target="_blank" rel="external">Samsung Galaxy Note 3 - 4.3 - API 18 - 1080x1920</a><br>三星Note3 Android 4.4.4 API 19  <a href="http://dl.genymotion.com/dists/4.4.4/ova/genymotion_vbox86p_4.4.4_170320_221603.ova" target="_blank" rel="external">Samsung Galaxy Note 3 - 4.4.4 - API 19 - 1080x1920</a></p>
+<hr>
+<h3 id="第一次启动虚拟机时，出现了报错无法打开"><a href="#第一次启动虚拟机时，出现了报错无法打开" class="headerlink" title="第一次启动虚拟机时，出现了报错无法打开"></a>第一次启动虚拟机时，出现了报错无法打开</h3><p>报错内容：VirtualBox cannot start virtual device<br>解决方法：卸载掉当前安装的VirtualBox，然后去<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="external">官网</a>下载最新的<a href="http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe" target="_blank" rel="external">VirtualBox-5.1.26</a>。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://CoderTung.top/2017/08/13/ADB-install-错误总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -805,7 +938,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
