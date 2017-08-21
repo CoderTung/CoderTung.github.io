@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="CoderTung">
 <meta property="og:description" content="有时开发难免会用到虚拟机，最好用的则是Genymotion在这里给出Genymotion下载个人免费版网址，需要登陆后才可以下载。有两个版本，使用Genymotion时必须有VirtualBox，一个是带有VirtualBox的，一个是不带VirtualBox的，可以自己选择。  使用Genymotion时，遇到的各种问题及解决办法（长期更新）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-16T14:37:37.684Z">
+<meta property="og:updated_time" content="2017-08-21T17:41:21.376Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Genymotion 问题总结">
 <meta name="twitter:description" content="有时开发难免会用到虚拟机，最好用的则是Genymotion在这里给出Genymotion下载个人免费版网址，需要登陆后才可以下载。有两个版本，使用Genymotion时必须有VirtualBox，一个是带有VirtualBox的，一个是不带VirtualBox的，可以自己选择。  使用Genymotion时，遇到的各种问题及解决办法（长期更新）">
@@ -345,7 +345,9 @@
 <p>以上方法选择一个即可。<br>在文件中找到类似下面的文字（可以搜索.ova）<br><code>[Genymotion] [Debug] Downloading file &quot;http://dl.genymotion.com/dists/5.1.0/ova/genymotion_vbox86p_5.1_160825_071239.ova&quot;</code><br>将<code>http://file........ova</code> 这个虚拟镜像地址复制，使用迅雷下载，很快能完成下载！<br><strong>第三步：</strong><br>把下载的ova文件复制到<br><code>C:\Users\电脑用户名\AppData\Local\Genymobile\Genymotion\ova</code><br>然后删除同名的带.partial的文件。<br><strong>第四步：</strong><br>再到genymotion中，重新点击需要下载的镜像，你会发现对应的镜像已经可以使用了不需要下载了，验证安装后即会显示在设备列表中。<br><strong>第五步：</strong><br>点击start ，启动模拟器，开始使用</p>
 <p>一些已知的虚拟机OVA下载地址，点击开始下载<br>三星Note3 Android 4.3     API 18  <a href="http://dl.genymotion.com/dists/4.3/ova/genymotion_vbox86p_4.3_170321_020053.ova" target="_blank" rel="external">Samsung Galaxy Note 3 - 4.3 - API 18 - 1080x1920</a><br>三星Note3 Android 4.4.4 API 19  <a href="http://dl.genymotion.com/dists/4.4.4/ova/genymotion_vbox86p_4.4.4_170320_221603.ova" target="_blank" rel="external">Samsung Galaxy Note 3 - 4.4.4 - API 19 - 1080x1920</a></p>
 <hr>
-<h3 id="启动虚拟机时，出现报错无法打开"><a href="#启动虚拟机时，出现报错无法打开" class="headerlink" title="启动虚拟机时，出现报错无法打开"></a>启动虚拟机时，出现报错无法打开</h3><p>报错内容：VirtualBox cannot start virtual device<br>解决方法：卸载掉当前安装的VirtualBox，然后去<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="external">官网</a>下载最新的<a href="http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe" target="_blank" rel="external">VirtualBox-5.1.26</a>。</p>
+<h3 id="启动虚拟机时，出现报错无法打开"><a href="#启动虚拟机时，出现报错无法打开" class="headerlink" title="启动虚拟机时，出现报错无法打开"></a>启动虚拟机时，出现报错无法打开</h3><p>报错内容：<strong>VirtualBox cannot start virtual device</strong><br>解决方法：卸载掉当前安装的VirtualBox，然后去<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="external">官网</a>下载最新的<a href="http://download.virtualbox.org/virtualbox/5.1.26/VirtualBox-5.1.26-117224-Win.exe" target="_blank" rel="external">VirtualBox-5.1.26</a>。</p>
+<hr>
+<h3 id="安装APK时报错"><a href="#安装APK时报错" class="headerlink" title="安装APK时报错"></a>安装APK时报错</h3><p>报错内容：<strong>INSTALL_FAILED_CPU_ABI_INCOMPATIBLE 新增于2017.8.22</strong><br>报错原因：因为系统里缺少了 Google Play 市场等各种谷歌服务应用，其实是因为版权问题，从 2.0 版本开始 Genymotion 提供的虚拟设备都已经移除了 Google Apps  以及 ARM library support ，所以如果通过软件里下载回来的虚拟机，在运行一些必须依靠这些组件运行的 App 时就会出现错误或闪退现象。<br>解决方法：<br>1.下载arm兼容包  Genymotion-ARM-Translation.zip<br>2.运行Genymotion，并start你配置好的virtual device<br>3.将下载好的Genymotion-ARM-Translation.zip直接拖动到virtual device，然后点击ok；<br>4.最后会弹出安装成功的信息<br>5.关闭virtual device以及Genymotion，重新启动。<br>再次部署Android应用在上面就可以成功了<br>在第三步如果出现无法安装的情况时，把Genymotion-ARM-Translation的文件名更改一下就可以，不要有多余的字符串。</p>
 
       
     </div>
@@ -521,7 +523,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速下载虚拟器"><span class="nav-number">1.</span> <span class="nav-text">快速下载虚拟器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动虚拟机时，出现报错无法打开"><span class="nav-number">2.</span> <span class="nav-text">启动虚拟机时，出现报错无法打开</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#快速下载虚拟器"><span class="nav-number">1.</span> <span class="nav-text">快速下载虚拟器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动虚拟机时，出现报错无法打开"><span class="nav-number">2.</span> <span class="nav-text">启动虚拟机时，出现报错无法打开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装APK时报错"><span class="nav-number">3.</span> <span class="nav-text">安装APK时报错</span></a></li></ol></div>
             
 
           </div>
